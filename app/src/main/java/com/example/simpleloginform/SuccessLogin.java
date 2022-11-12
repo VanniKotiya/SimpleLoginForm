@@ -2,11 +2,12 @@ package com.example.simpleloginform;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SucessLogin extends AppCompatActivity {
+public class SuccessLogin extends AppCompatActivity {
     private Button backButton;
 
     @Override
@@ -15,15 +16,18 @@ public class SucessLogin extends AppCompatActivity {
         setContentView(R.layout.activity_sucess_login);
 
         backButton = (Button) findViewById(R.id.activity_main_backButton);
-        backButton.setOnClickListener(new view1.onclcik
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity();
+            }
+        });
 
     }
-     loginButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            if(usernameEditText.getText().length()>0 && passwordEditText.getText().length()>0){
-                if(usernameEditText.getText().toString()=="admin") {
-                    openSuccessActivity();
-                }
+    private void openMainActivity(){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 
 }

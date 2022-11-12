@@ -40,10 +40,12 @@
                 android:id="@+id/activity_main_usernameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/login_form_username"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:minHeight="48dp"
-                android:importantForAutofill="no"
-                />
+                android:textColorHint="#757575"
+                tools:ignore="DuplicateSpeakableTextCheck" />
              <TextView
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
@@ -54,16 +56,20 @@
                 android:id="@+id/activity_main_passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/login_form_password"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:importantForAutofill="no" />
+                android:textColorHint="#757575"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/activity_main_loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/login_form_button"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:onClick="activity_success_login"/>
 
         </LinearLayout>
 

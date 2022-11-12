@@ -5,4 +5,8 @@
     <string name="login_form_username">User Name</string>
     <string name="login_form_password">Password</string>
     <string name="login_form_button">Login</string>
+
+    <string name="success_form_tile">Login Success</string>
+    <string name="success_form_login">Logged Successfully</string>
+    <string name="success_form_backButton">Back to login</string>
 </resources>
